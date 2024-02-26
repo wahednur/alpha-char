@@ -43,3 +43,8 @@ function setTextElementValueById(elementId, value) {
   const element = document.getElementById(elementId);
   element.innerText = value;
 }
+
+function getElementTextById(elementId) {
+  const currentAlphabet = document.getElementById(elementId).innerText;
+  return currentAlphabet;
+}

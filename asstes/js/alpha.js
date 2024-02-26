@@ -9,7 +9,12 @@ function continueGame() {
 
 function play() {
   hideElementById("home-screen");
+  hideElementById("score-board");
   showElementById("play-screen");
+
+  setTextElementValueById("current-life", 5);
+  setTextElementValueById("current-score", 0);
+
   continueGame();
 }
 
@@ -52,9 +57,11 @@ function getElementNumberById(id) {
 }
 function gameOver() {
   hideElementById("play-screen");
-  showElementById("home-screen");
-  console.log("Game over");
-  location.reload();
+  showElementById("score-board");
+  const score = getTextElementValueById("current-score");
+  document.getElementById("total-score").innerText = score;
+  const currentAlphabet = getElementTextById("current-alphabet");
+  removeBgColorByID(currentAlphabet);
 }
 
 document.addEventListener("keyup", handleKeyBoardKeyUpEvent);

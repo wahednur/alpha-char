@@ -9,7 +9,7 @@
   <body>
     <!-- Main section start  -->
     <main
-      class="bg-[#010313] min-h-screen bg-[url(asstes/images/background.png)] bg-no-repeat bg-center"
+      class="bg-[#010313] min-h-screen bg-[url(/asstes/images/background.png)] bg-no-repeat bg-center"
     >
       <!-- Home section start  -->
       <section id="home-screen" class="home text-white">
@@ -109,14 +109,20 @@
       </section>
       <!-- Pay ground section end  -->
       <!-- Score section start  -->
-      <section class="score flex justify-center items-center h-screen hidden">
+      <section
+        id="score-board"
+        class="score flex justify-center items-center h-screen hidden"
+      >
         <div
           class="score-body bg-[url(/asstes/images/score-bg.svg)] bg-no-repeat bg-center text-white text-center py-8"
         >
+          <h1 class="text-2xl">Game Over</h1>
           <h1 class="text-6xl font-extrabold">
-            Score: <span class="font-light">14</span>
+            Score: <span id="total-score" class="font-light">14</span>
           </h1>
-          <button class="btn text-2xl p-4 h-16 my-5">Play Now</button>
+          <button onclick="play()" class="btn text-2xl p-4 h-16 my-5">
+            Play Now
+          </button>
           <p>Practice will make you Pro</p>
         </div>
       </section>
