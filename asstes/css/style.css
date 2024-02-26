@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://cdn.tailwindcss.com");
 body {
   font-family: "Poppins", "Inter", "Anton", sans-serif;
 }
