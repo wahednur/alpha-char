@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha Clash Pro</title>
+    <link rel="stylesheet" href="asstes/css/style.css" />
+  </head>
+  <body>
+    <!-- Main section start  -->
+    <main
+      class="bg-[#010313] min-h-screen bg-[url(/asstes/images/background.png)] bg-no-repeat bg-center"
+    >
+      <!-- Home section start  -->
+      <section id="home-screen" class="home text-white">
+        <div class="flex flex-col min-h-screen justify-center items-center">
+          <h1 class="text-8xl font-[anton] uppercase">
+            Alpha Clash <span class="font-light">Pro</span>
+          </h1>
+          <p class="pb-10 py-6">
+            Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+          </p>
+          <button onclick="play()" class="pay-btn">Pay Now</button>
+        </div>
+      </section>
+      <!-- Home section end  -->
+      <!-- Pay ground section start  -->
+      <section id="play-screen" class="play-gnd hidden">
+        <!-- Playground screen star -->
+        <div
+          class="artboard artboard-horizontal phone-4 border-[#010313cc] border-8 rounded-xl mx-auto bg-[#ffffffcc]"
+        >
+          <!-- Play screen content start  -->
+          <div class="playground text-center">
+            <p class="p-4 bg-bg-black-a text-white inline-block rounded-b-lg">
+              Don't watch keyboard while playing...
+            </p>
+            <div class="game-body flex justify-center items-center h-80">
+              <p
+                id="current-alphabet"
+                class="text-9xl font-poppins font-semibold uppercase"
+              >
+                Y
+              </p>
+            </div>
+          </div>
+          <!-- Play screen content end  -->
+        </div>
+        <!-- Playground screen end -->
+        <!-- keyboard start  -->
+        <div class="keyboard mt-8 font-poppins font-semibold">
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd id="q" class="kbd">q</kbd>
+            <kbd id="w" class="kbd">w</kbd>
+            <kbd id="e" class="kbd">e</kbd>
+            <kbd id="r" class="kbd">r</kbd>
+            <kbd id="t" class="kbd">t</kbd>
+            <kbd id="y" class="kbd">y</kbd>
+            <kbd id="u" class="kbd">u</kbd>
+            <kbd id="i" class="kbd">i</kbd>
+            <kbd id="o" class="kbd">o</kbd>
+            <kbd id="p" class="kbd">p</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd id="a" class="kbd">a</kbd>
+            <kbd id="s" class="kbd">s</kbd>
+            <kbd id="d" class="kbd">d</kbd>
+            <kbd id="f" class="kbd">f</kbd>
+            <kbd id="g" class="kbd">g</kbd>
+            <kbd id="h" class="kbd">h</kbd>
+            <kbd id="j" class="kbd">j</kbd>
+            <kbd id="k" class="kbd">k</kbd>
+            <kbd id="l" class="kbd">l</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd id="z" class="kbd">z</kbd>
+            <kbd id="x" class="kbd">x</kbd>
+            <kbd id="c" class="kbd">c</kbd>
+            <kbd id="v" class="kbd">v</kbd>
+            <kbd id="b" class="kbd">b</kbd>
+            <kbd id="n" class="kbd">n</kbd>
+            <kbd id="m" class="kbd">m</kbd>
+            <kbd id="/" class="kbd">/</kbd>
+          </div>
+        </div>
+        <!-- keyboard end  -->
+        <!-- Playground score start  -->
+        <div
+          class="lif-score flex justify-between font-inter font-bold text-white"
+        >
+          <div
+            class="score-item life bg-[url(/asstes/images/life.svg)] bg-no-repeat"
+          >
+            <div class="life-span flex justify-around items-center p-4">
+              <p>Life</p>
+              <img src="asstes/images/heart.svg" alt="" />
+              <p id="current-life">1</p>
+            </div>
+          </div>
+          <div class="score-item score-card">
+            <div class="score-span flex justify-around items-center p-4">
+              <p>Score</p>
+              <img src="asstes/images/dollar.svg" alt="" />
+              <p id="current-score">50</p>
+            </div>
+          </div>
+        </div>
+        <!-- Playground score start  -->
+      </section>
+      <!-- Pay ground section end  -->
+      <!-- Score section start  -->
+      <section class="score flex justify-center items-center h-screen hidden">
+        <div
+          class="score-body bg-[url(/asstes/images/score-bg.svg)] bg-no-repeat bg-center text-white text-center py-8"
+        >
+          <h1 class="text-6xl font-extrabold">
+            Score: <span class="font-light">14</span>
+          </h1>
+          <button class="btn text-2xl p-4 h-16 my-5">Play Now</button>
+          <p>Practice will make you Pro</p>
+        </div>
+      </section>
+      <!-- Score section end  -->
+    </main>
+    <!-- Main section end  -->
+    <script src="asstes/js/utilities.js"></script>
+    <script src="asstes/js/alpha.js"></script>
+  </body>
+</html>
